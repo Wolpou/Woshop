@@ -1,0 +1,13 @@
+@import "Variables.scss";
+@import '@fontsource/ysabeau';
+
+.container{
+  position: relative;
+  background-color: $First;
+  top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}  
+

@@ -1,0 +1,126 @@
+@import "./Variables.scss";
+@import '@fontsource/ysabeau';
+.product{
+    margin: 20px 20px 20px;
+    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.423);
+    border-radius: 20px;
+    font-family: 'Ysabeau Office', sans-serif;
+    background-color:$First;
+
+
+    &:hover{
+        box-shadow: 0 5px 24px $Third;
+    }
+}
+.pimage{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+.counter{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+
+    button{
+     width: 30px;
+     height: 20px;
+     border-radius: 25px;
+     border: none;
+     background-color: $Third;
+     color: $First;
+     font-size: 18px;
+     transition: 0.5s;
+     transition-property: box-shadow;
+     &:hover{
+        box-shadow: 0 0 5px $Five,
+        0 0 10px $Five,
+        0 0 12px $Five,
+        0 0 15px $Five;
+        cursor: pointer;
+      
+     }
+    }
+    span{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color: $Third;
+    }
+}
+.title{
+    margin-left: 10px;
+    color: $Four;
+}
+.price{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight:600;
+
+}
+.bcard{
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $Five;
+    cursor: pointer;
+    height: 20px;
+}
+a {
+    text-decoration: none;
+    color:$Five ;
+
+    &:hover{
+        font-size: 18px;
+    }
+  }
+.badd{
+    width: 100px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+.remove{
+    position: relative !important;
+    background-color:$First  !important;
+    top: 5px !important;
+    margin-right: 5px !important;
+    box-shadow: none !important;
+    img{
+        width: 140% !important;
+        height: 140% !important;
+    }
+}
+.chandta{
+    color: $Four !important;
+    position: relative !important;
+}
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+
+  
