@@ -1,7 +1,7 @@
 @import "Variables.scss";
 @import '@fontsource/ysabeau';
 
-.container{
+.store{
   position: relative;
   background-color: $First;
   top: 30px;
@@ -9,5 +9,14 @@
   flex-wrap: wrap;
   width: 100%;
   display: flex;
-}  
+}
+
+//responsive400
+@media(max-width: 400px){
+  .store{
+   position: relative;
+   justify-content: center;
+   align-items: center;
+  }
+}
 

@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Store from './components/Store';
 import ProductDetails from './components/ProductDetails';
 import ShopCart from './components/ShopCart';
+
 //style
 import './App.css';
 

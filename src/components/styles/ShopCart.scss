@@ -77,3 +77,79 @@
         font-weight: bold;
     }
 }
+
+//responsive400
+@media(max-width:400px){
+    .container{
+        margin-top: 20px;
+        justify-content: center ;
+        align-items: center;
+        
+    
+    }
+    .shopcart{
+        width: 98%;
+        height: 100%;
+    }
+    .total{
+        width: 98%;
+        height: 200px;
+        position: relative;
+        margin-top: 50px;
+        margin-right: 0px;
+        border-radius: 25%;
+        justify-content: center;
+        align-items: center;
+        
+        span{
+            font-size: 20px;
+            position: relative;
+            top: 50px;
+            left: 20px;
+        }
+        .kharid{
+            right: 0px;
+            margin-right: 0px;
+            justify-content: space-evenly;
+            height: 25px;
+            top: 100px;
+            button{
+                position: relative;
+                width: 100px;
+                height: 25px;
+                font-size: 18px;
+                margin-right: 0px;
+                box-shadow: none;
+            }
+        }
+        
+    }
+    .checkout{
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+
+        h3{
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 24px !important;
+        }
+    }
+
+}
+@media(max-width: 768px){
+    .container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .total{
+            width: 98%;
+            margin-top: 50px;
+            margin-right: 0px;
+        }
+    }
+
+}

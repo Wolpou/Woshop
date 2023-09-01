@@ -177,3 +177,23 @@ body{
         }
       }
 
+      
+      //responsive
+
+@media(max-width: 400px){
+   .pd{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 100px;
+
+        .dimage img{
+                width: 100%;
+                height: 100%;
+                margin-left: -25px !important;
+        }
+        .dtitle{
+                font-size: 20px !important;
+        }
+   }     
+}
