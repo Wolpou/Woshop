@@ -3,11 +3,13 @@ import "../styles/Loader.scss";
 
 const Loader = () => {
     return (
-        <div className='lc'>
-            <div class="loader">
-                <span class="loader-text">loading</span>
-                <span class="load"></span>
-            </div>
+        <div className="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     );
 };

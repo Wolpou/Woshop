@@ -7,11 +7,11 @@
   z-index: 2;
   width: 100%;
   height: 40px;
-  background-color:$First;
+  background-color:#fffffff1;
   display: flex;
   justify-content: space-between;
-  color: $Four;
-  border-bottom: 2px solid $Five;
+  color: $Second;
+  border-bottom: 2px solid #393e4663;
   font-family: 'Ysabeau Office', sans-serif;
 }
 .navbar-item {     
@@ -19,64 +19,27 @@
     text-align: center;
     align-items: center;
     cursor:not-allowed;
+    margin-left: 50px;
+    
   
     h1 {
       font-size:30px;
       margin-left: 20px;
       font-family: 'Dancing Script', cursive;
    
-    }  
-    img {
-      height: 40px;
-      width: auto;
-      -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-      animation: heartbeat 1.5s ease-in-out infinite both;  
+    }
+    img{
+      height: 30px;
+      margin-left: 2px;
     }
    
   }
-
-  @keyframes heartbeat {
-    from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  }
-
-
-
 
 .navbar-item2{
 
         display: flex;
         align-items: center;
+        margin-right: 50px;
 
         
 
@@ -102,52 +65,18 @@
                 align-items: center; 
                 justify-content: center;
                 left: -15px;
-                // top: -5px;
                 z-index: 2;
                 overflow: hidden;
                 height: 20px;
                 width: 20px;     
                 font-size: 14px;
+                font-weight: bold;
                 background-color:$Third ;
-                color:$Four ;
+                color:$First;
                 border-radius: 20px;
               }
         }
-        .shadow__btn {
-                padding: 5px 20px;
-                border: none;
-                font-size: 17px;
-                color: $Four;
-                border-radius: 7px;
-                letter-spacing: 4px;
-                font-weight: bold;
-                text-transform: uppercase;
-                transition: 0.5s;
-                transition-property: box-shadow;
-                height: 30px;
-                margin-right: 30px;
-                cursor: pointer;
-
-                a{
-                  text-decoration: none !important;
-                  background-color: $Second !important;
-                  color: $Four;
-                }
-              }
-              
-              .shadow__btn {
-                background: $Second !important;
-                box-shadow: 0 0 25px $Second;
-              }
-              
-              .shadow__btn:hover {
-                box-shadow: 0 0 5px $Second,
-                            0 0 10px $Second,
-                            0 0 15px $Second,
-                            0 0 20px $Second;
-              }
-
-              
+                
 }
 
 //responsive400
@@ -158,19 +87,21 @@
     height: 30px;
     align-items: center;
     line-height: 30px;
+    
   }
 
   .navbar-item{
+    margin-left: 0px;
     h1{
       font-size: 24px;
     }
     img{
-      height: 30px;
-      
+      height: 25px;
     }
   }
   .navbar-item2{
     height: 25px ;
+    margin-right: 0px;
 
 
     a{
@@ -187,16 +118,8 @@
       font-size: 12px;
       top: 2px;
       margin-left:6px;
-      background-color: $Four !important;
-      color:$Third !important;
+      
     }
   }
-    .shadow__btn{
-      height: 25px;
-      font-size: 16px;
-      margin-right: 10px;
-      padding: 5px 10px;
-      box-shadow: 0 0 15px $Second;
-    }
   }
 }

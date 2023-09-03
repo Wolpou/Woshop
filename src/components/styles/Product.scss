@@ -1,5 +1,6 @@
 @import "./Variables.scss";
 @import '@fontsource/ysabeau';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 .product{
     margin: 20px 20px 20px;
     box-shadow: 0 5px 24px rgba(0, 0, 0, 0.423);
@@ -18,6 +19,21 @@
     border-radius: 20px;
 
 }
+.title{
+    color: $Second;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 5px;
+}
+.price{
+    color: $Four;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: 2px solid $Third;
+    margin-left: 5px;
+    
+}
 .counter{
     margin-left: 10px;
     margin-bottom: 10px;
@@ -29,15 +45,16 @@
      border-radius: 25px;
      border: none;
      background-color: $Third;
-     color: $Four;
+     color: $First;
      font-size: 18px;
+    //  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.423);
      transition: 0.5s;
      transition-property: box-shadow;
      &:hover{
-        box-shadow: 0 0 5px $Five,
-        0 0 10px $Five,
-        0 0 12px $Five,
-        0 0 15px $Five;
+        box-shadow: 0 0px 2px $Third,
+        0 0px 3px $Third,
+        0 0px 5px $Third,
+        0 0px 7px $Third;
         cursor: pointer;
       
      }
@@ -51,37 +68,30 @@
         color: $Third;
     }
 }
-.title{
-    margin-left: 10px;
-    color: $Four;
-}
-.price{
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight:600;
-
-}
 .bcard{
     display: flex;
     justify-content: space-between;
 }
 .details{
     margin-right: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: $Five;
+    font-weight: 700;
     cursor: pointer;
     height: 20px;
 }
 a {
     text-decoration: none;
-    color:$Five ;
+    color:$Third ;
+    font-size: 14px;
+     
 
     &:hover{
-        font-size: 18px;
+        font-size: 16px;
+        color: $Four;
+        
     }
   }
 .badd{
+    color: $First !important;
     width: 100px !important;
     font-size: 14px !important;
     text-align: center !important;
@@ -89,13 +99,14 @@ a {
 }
 .remove{
     position: relative !important;
-    background-color:$First  !important;
-    top: 5px !important;
-    margin-right: 5px !important;
+    background-color: $First !important;
     box-shadow: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    top: 5px !important;
     img{
-        width: 140% !important;
-        height: 140% !important;
+        width: 25px;
+        height: 25px;
     }
 }
 .chandta{
@@ -123,4 +134,18 @@ a {
     }
   }
 
-  
+@media(max-width: 400px){
+    .product{
+     
+    .badd{
+        font-size: 12px !important;
+        font-weight: bold !important;
+    }
+    .counter{
+        
+        button:hover{
+            box-shadow: none !important;
+        }
+    }
+    }
+}

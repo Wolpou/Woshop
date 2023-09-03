@@ -1,10 +1,11 @@
 @import "./Variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 .cart{
     margin-top: 50px;
     margin-left: 50px;
     display: flex;
     border-radius: 25px;
-    box-shadow: 5px 5px 0px $Five;
+    box-shadow: 5px 5px 0px $Four;
     width: 750px;
     justify-content:space-between;
 
@@ -17,12 +18,16 @@
 }
 .tozih{
     display: flex;
+    
 
     h2{
-        margin-left: 20px;
+        margin-left: 24px;
         display: flex; 
         align-items: center; 
         justify-content: center;
+        font-family: 'Dancing Script', cursive;
+        color: $Four;
+        padding-top: 5px;
     }
     p{
         margin-left: 50px;
@@ -30,6 +35,9 @@
         align-items: center; 
         justify-content: center;
         font-size:18px;
+        font-weight: 650;
+        color: $Second;
+        padding-top: 10px;
     }
 }
 .tedad{
@@ -39,8 +47,11 @@
         display: flex; 
         align-items: center; 
         justify-content: center;
-        font-size:18px;
+        font-size:24px;
+        font-weight: bold;
         top: 65px;
+        color: $Four;
+        border-bottom: 2px solid $Third;
     }
 }
 .count{
@@ -58,7 +69,7 @@
      border-radius: 25px;
      border: none;
      background-color: $Third;
-     color: $Four;
+     color: $First;
      font-size: 22px;
      margin-left: 10px;
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.423);
@@ -120,7 +131,7 @@
         justify-content: center;
         align-items: center;
         width: 98%;
-        box-shadow: 0px 5px 0px $Five;
+        box-shadow: 0px 5px 0px $Four;
 
         .cimage{
             width: 50%;
@@ -132,7 +143,8 @@
             width: 98%;
             h2{
              margin-left: 0px;
-             font-size: 16px;
+             font-size: 24px;
+             padding-top: 10px;
             }
         }
     .count{
